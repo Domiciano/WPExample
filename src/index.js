@@ -2,9 +2,9 @@ import axios from 'axios';
 import { CardList } from './components.js';
 
 const cardsData = [
-  { content: 'Card 1: Primera tarjeta' },
-  { content: 'Card 2: Segunda tarjeta' },
-  { content: 'Card 3: Tercera tarjeta' },
+  { title:"Alfa", content: 'Card 1: Primera tarjeta', buttonText: 'Eliminar'},
+  { title:"Beta", content: 'Card 2: Segunda tarjeta', buttonText: 'Eliminar'},
+  { title:"Gamma", content: 'Card 3: Tercera tarjeta', buttonText: 'Eliminar'},
 ];
 
 const cardList = CardList(cardsData);
