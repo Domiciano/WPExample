@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html',  // Plantilla HTML para generar el archivo
+      template: 'public/index.html',  // Plantilla HTML para generar el archivo
     }),
   ],
   devServer: {
