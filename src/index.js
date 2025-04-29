@@ -11,10 +11,17 @@ const cardList = CardList(cardsData);
 document.body.appendChild(cardList);
 
 
-axios.get('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => {
-    console.log('Datos obtenidos:', response.data);
-  })
-  .catch(error => {
-    console.error('Error al obtener los datos:', error);
-  });
+const URL = 'https://pokeapi.co/api/v2/pokemon/15';
+
+const obtenerPokemon = async () => {
+  try {
+    const response = await axios.get(URL);
+    console.log('Datos recibidos:');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error al hacer la solicitud:', error.message);
+  }
+};
+
+// Llamar la función
+obtenerPokemon();
